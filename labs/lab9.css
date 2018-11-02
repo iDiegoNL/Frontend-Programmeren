@@ -1,0 +1,13 @@
+table {
+    border-style: double;
+    text-align: center;
+    background-image: linear-gradient(red, yellow);
+}
+
+.center {
+    text-align: center;
+}
+
+.border {
+    border-style: double;
+}

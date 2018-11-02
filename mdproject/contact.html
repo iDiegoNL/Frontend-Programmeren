@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+<nav>
+    <div class="nav-wrapper teal lighten-2">
+        <a href="index.html" class="brand-logo">XtreemTravel</a>
+        <a href="#" data-target="sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="windsurfing.html">Windsurfing</a></li>
+            <li><a href="mountainclimbing.html">Mountainclimbing</a></li>
+            <li><a href="snorkelen.html">Snorkelen</a></li>
+            <li><a href="about-us.html">Over Ons</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="last-minutes.html">Last Minutes</a></li>
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="sidenav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="windsurfing.html">Windsurfing</a></li>
+    <li><a href="mountainclimbing.html">Mountainclimbing</a></li>
+    <li><a href="snorkelen.html">Snorkelen</a></li>
+    <li><a href="about-us.html">Over Ons</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="last-minutes.html">Last Minutes</a></li>
+</ul>
+
+<div class="container center-align">
+    <h2>Contact</h2>
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="voornaam" type="text" class="validate">
+                    <label for="voornaam">Voornaam</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <input id="achternaam" type="text" class="validate">
+                    <label for="achternaam">Achternaam</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="vraag" class="materialize-textarea"></textarea>
+                    <label for="vraag">Uw vraag</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--JavaScript at end of body for optimized loading-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.sidenav').sidenav();
+    });
+</script>
+</body>
+</html>

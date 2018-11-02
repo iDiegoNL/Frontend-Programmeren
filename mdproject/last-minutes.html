@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+<nav>
+    <div class="nav-wrapper teal lighten-2">
+        <a href="index.html" class="brand-logo">XtreemTravel</a>
+        <a href="#" data-target="sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="windsurfing.html">Windsurfing</a></li>
+            <li><a href="mountainclimbing.html">Mountainclimbing</a></li>
+            <li><a href="snorkelen.html">Snorkelen</a></li>
+            <li><a href="about-us.html">Over Ons</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="last-minutes.html">Last Minutes</a></li>
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="sidenav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="windsurfing.html">Windsurfing</a></li>
+    <li><a href="mountainclimbing.html">Mountainclimbing</a></li>
+    <li><a href="snorkelen.html">Snorkelen</a></li>
+    <li><a href="about-us.html">Over Ons</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="last-minutes.html">Last Minutes</a></li>
+</ul>
+
+<div class="container">
+    <h2>Last Minutes</h2>
+    <hr>
+    <br>
+    <div class="row">
+
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/windsurfing.jpg">
+                    <span class="card-title">Windsurfing</span>
+                </div>
+                <div class="card-content">
+                    <p>Deze maand is het aantrekkelijkst voor windsurfing in Cancún, México.</p>
+                </div>
+                <div class="card-action">
+                    <a href="windsurfing.html">Lees Verder</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/mountainclimbing.jpg">
+                    <span class="card-title">Moutainclimbing</span>
+                </div>
+                <div class="card-content">
+                    <p>Deze week vertrekt een groep enthousiaste klimmers naar de Himalayas.</p>
+                </div>
+                <div class="card-action">
+                    <a href="mountainclimbing.html">Lees Verder</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/snorkelen.jpg">
+                    <span class="card-title">Snorkelen</span>
+                </div>
+                <div class="card-content">
+                    <p>Snorkelen in Costa Rica. Naast de natuurreserven heeft Costa Rica 's werelds tweede grootste
+                        koraalrif</p>
+                </div>
+                <div class="card-action">
+                    <a href="snorkelen.html">Lees Verder</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!--JavaScript at end of body for optimized loading-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+    });
+</script>
+</body>
+</html>
