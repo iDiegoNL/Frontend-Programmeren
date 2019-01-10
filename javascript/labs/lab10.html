@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Vul bedrag in" name="bedrag" id="bedrag" required autofocus>
+<select name="conversie" id="conversie" title="Conversie" required>
+    <option value="dollar_euro">Dollar > Euro</option>
+    <option value="euro_dollar">Euro > Dollar</option>
+    <option value="euro_roebel">Euro > Roebel</option>
+    <option value="roebel_euro">Roebel > Euro</option>
+</select>
+<button onclick="exchange(bedrag.value, conversie.value)">Omzetten</button>
+
+<p id="conversie_bedrag">
+</p>
+
+<script src="functions10.js" async></script>
+</body>
+</html>

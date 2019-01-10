@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3</title>
+    <style>
+        html {
+            background-image: url("http://unocardinfo.victorhomedia.com/graphics/uno_card-redreverse.png");
+        }
+    </style>
+</head>
+<body>
+<h2>Lab 01</h2>
+<h3>Factuur</h3>
+<script>
+    var klantnaam = prompt('Voer je eigen naam in');
+    var aantal = parseInt(prompt('Aantal boeken te bestellen'));
+    var titel = 'JavaScript';
+    var prijs = 29.90;
+    var totaal = aantal * prijs;
+    var btw = totaal * 0.21;
+    var btwtotaal = btw + totaal;
+    document.write('<br>Bedankt voor je bestelling, ' + klantnaam);
+    document.write('<br>Boektitel is: ' + titel);
+    document.write('<br>Aantal te bestellen: ' + aantal);
+    document.write('<br>Prijs per boek is: ' + prijs.toFixed(2));
+    document.write('<br>Bedrag is: &euro; ' + Math.round(totaal));
+    document.write('<br>BTW is: &euro; ' + Math.round(btwtotaal));
+    document.write('<br>Totaal inclusief BTW is: &euro; ' + Math.round(totaal));
+</script>
+</body>
+</html>

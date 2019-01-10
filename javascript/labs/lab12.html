@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var laptops = {
+        "macbook": {
+            "model": "air",
+            "voorraad": 2000,
+            "prijs": 1090
+        },
+        "asusbook": {
+            "model": "wind",
+            "voorraad": 1000,
+            "prijs": 990
+        },
+        "dellbook": {
+            "model": "fire",
+            "voorraad": 987,
+            "prijs": 890
+        }
+    };
+
+    for (var merk in laptops) {
+        write("Merk: " + merk);
+        for (var prop in laptops[merk]) {
+            writens(prop + ": " + laptops[merk][prop]);
+            if (prop === "voorraad") {
+                if (laptops[merk][prop] < 1000) {
+                    writens("WAARSCHUWING");
+                }
+            }
+            write("");
+
+        }
+    }
+
+    function write(s) {
+        document.write(s + "<br>");
+    }
+
+    function writens(s) {
+        document.write(s);
+    }
+</script>
+
+</body>
+</html>
